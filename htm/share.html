@@ -1,0 +1,28 @@
+<html><head>
+<title></title>
+
+<script language="javascript">
+function toggle5(showHideDiv, switchImgTag) {
+        var ele = document.getElementById(showHideDiv);
+        var imageEle = document.getElementById(switchImgTag);
+        if(ele.style.display == "block") {
+                ele.style.display = "none";
+		imageEle.innerHTML = '<img src="../img/share3.gif" border="0" alt="" /> Share';
+        }
+        else {
+                ele.style.display = "block";
+                imageEle.innerHTML = '<img src="../img/share2.gif" border="0" alt="" /> Share';
+        }
+}
+</script>
+
+</head><body>
+
+<div id="headerDivImg">
+<a id="imageDivLink" href="javascript:toggle5('contentDivImg', 'imageDivLink');" style="text-decoration:none;"><img src="../img/share1.gif" border="0" alt="" /> Share</a>
+</div>
+
+<div id="contentDivImg" style="display: none;">This demo uses plus and minus images for hiding and showing your div dynamically via JavaScript.</div>
+
+</body>
+</html>
